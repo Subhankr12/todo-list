@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import '../App.css';
 import TodoMain from './TodoMain';
 
 function App() {
