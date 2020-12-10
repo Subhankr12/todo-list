@@ -1,0 +1,15 @@
+1. Visualizing our application (User Interface) ->  wire framing
+2. Functionality
+	- Add task
+	- Remove task
+3. tasks - []
+4. Functions
+	- addTask
+	- removeTask
+5. Components
+	- Todolist
+	- ListTasks
+
+
+
+array.map(function(currentValue, index, arr), thisValue)
