@@ -15,6 +15,14 @@ function TodoMain() {
         });
         setTask("");
     }
+
+    const handleDeleteClick = (index) => {
+        setNewTask((prevTasks) => {
+            let duplicateTasks = [...prevTasks];
+            duplicateTasks.splice(index, 1);
+            return duplicateTasks;
+        })
+    }
     return (
         <div className='main_div'>
             <div className='center_div'>
@@ -27,7 +35,7 @@ function TodoMain() {
                 <br />
                 <ol>
                    {newTask.map((val, index)=> {
-                        return <TodoList key={index} text={val}/>
+                        return <TodoList key={index} text={val} index={index} onDeleteClick={handleDeleteClick} />
                     })} 
                 </ol>
             </div>

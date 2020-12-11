@@ -87,3 +87,19 @@ ol li {
   text-transform: capitalize;
   list-style: none;
 }
+
+.todo-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.delete-btn{
+  background-color: #d14e4e;
+  color: #fff;
+  padding: 5px;
+  outline: none;
+  border: 3px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
